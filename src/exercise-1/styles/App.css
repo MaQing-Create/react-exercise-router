@@ -1,8 +1,15 @@
 .link {
     text-decoration: none;
     color: black;
+    margin:20px;
+    padding:10px;
 }
 
 .active {
     text-decoration: underline;
+}
+
+.header {
+    background: gainsboro;
+    padding:10px;
 }

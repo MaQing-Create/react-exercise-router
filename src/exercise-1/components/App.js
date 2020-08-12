@@ -12,10 +12,12 @@ class App extends Component {
         return (
             <div className="app">
                 <Router>
-                    <NavLink className="link" activeClassName="active" to='/' >Home</NavLink>
-                    <NavLink className="link" activeClassName="active" to='/products'>Products</NavLink>
-                    <NavLink className="link" activeClassName="active" to='/my-profile'>My Profile</NavLink>
-                    <NavLink className="link" activeClassName="active" to='/about-us'>About Us</NavLink>
+                    <div className="header">
+                        <NavLink className="link" activeClassName="active" to='/' >Home</NavLink>
+                        <NavLink className="link" activeClassName="active" to='/products'>Products</NavLink>
+                        <NavLink className="link" activeClassName="active" to='/my-profile'>My Profile</NavLink>
+                        <NavLink className="link" activeClassName="active" to='/about-us'>About Us</NavLink>
+                    </div>
                     <Switch>
                         <Route exact path='/my-profile' component={MyProfile}/>
                         <Route exact path='/Products' component={Products}/>
