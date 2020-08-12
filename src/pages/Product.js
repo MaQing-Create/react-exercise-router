@@ -31,13 +31,7 @@ class Product extends Component {
 
     componentDidMount() {
         const id = this.props.match.params.id
-        console.log(id)
-        let product1 = Object.values(this.products).filter(product => product.id == id)
-        console.log(product1)
-        this.setState({
-            product:product1,
-        })
-        console.log(this.state.product)
+       Object.values(this.products).forEach(product =>{if(product.id == id) this.setState({product:product,})})
     }
 
     render() {
