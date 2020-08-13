@@ -13,7 +13,7 @@ class App extends Component {
             <div className="app">
                 <Router>
                     <div className="header">
-                        <NavLink className="link" activeClassName="active" to='/' >Home</NavLink>
+                        <NavLink className="link" activeClassName="active" to='/' exact>Home</NavLink>
                         <NavLink className="link" activeClassName="active" to='/products'>Products</NavLink>
                         <NavLink className="link" activeClassName="active" to='/my-profile'>My Profile</NavLink>
                         <NavLink className="link" activeClassName="active" to='/about-us'>About Us</NavLink>
